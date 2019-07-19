@@ -9,4 +9,9 @@ export class AppController {
   getHello(@Res() res){
     res.render('login');
   }
+
+  @Get('home')
+  getHome(@Res() res){
+    res.render('home');
+  }
 }

@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <style>
     html,
     body {
-        height: 100%;
+        background: url(https://farm3.staticflickr.com/2364/2243611451_d56b7fb3c2_b.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     body {
@@ -112,19 +119,20 @@
 
 </style>
 <body class="text-center">
-<form class="form-signin">
-    <img class="mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+<form class="form-signin" action="/usuario/login" method="post">
     <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
-    <label for="inputEmail" class="sr-only">Correo</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Correo" required="" autofocus="">
+    <label for="inputEmail" class="sr-only">Username</label>
+    <input type="email" id="inputEmail" class="form-control" name="username" placeholder="Correo" required="" autofocus="">
     <label for="inputPassword" class="sr-only">Contraseña</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+    <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Contraseña" required="">
     <div class="checkbox mb-3">
         <label>
             <input type="checkbox" value="remember-me"> Recordar Contraseña
         </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+        Iniciar Sesión
+    </button>
     <p class="mt-5 mb-3 text-muted">2019</p>
 </form>
 </body>
