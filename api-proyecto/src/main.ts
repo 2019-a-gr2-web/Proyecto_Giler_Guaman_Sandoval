@@ -7,10 +7,13 @@ import * as path from 'path';
 import * as session from 'express-session'; // Typescript
 const FileStore = require('session-file-store')(session); // Nodejs
 
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule) as NestExpressApplication;
   app.setViewEngine('ejs');
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
+    app.use(express.static('publico'))
+
   app.use(
       session({
         name: 'server-session-id',
