@@ -1,4 +1,4 @@
-import {Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn} from "typeorm";
 import {UsuarioEntity} from "../Usuario/usuario.entity";
 import {PlatosEntity} from "../Platos/platos.entity";
 
@@ -31,6 +31,6 @@ export class ReservasEntity{
     @ManyToOne(type => UsuarioEntity, usuario => usuario.reservas)
     usuario: UsuarioEntity;
 
-    @OneToMany(type => PlatosEntity, plato => plato.reserva)
+    @ManyToMany(type => PlatosEntity, plato => plato.reservas)
     platos: PlatosEntity[];
 }

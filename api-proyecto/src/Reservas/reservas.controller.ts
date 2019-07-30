@@ -29,9 +29,10 @@ export class ReservasController {
     }
 
     @Get('eliminarReservas/:reservaId')
-     getEliminarReservas(@Res() res, @Param('reservaId') reservaId : number){
+     async getEliminarReservas(@Res() res, @Param('reservaId') reservaId : number){
         this.reservasService.deleteReserva(reservaId);
-        res.redirect('gestionReservas');
+        const lstReservas = await this.reservasService.conseguirReservas();
+        res.render('reservas/gestionReservas', {lstReservas : lstReservas});
     }
 
     @Post('crearReservas')

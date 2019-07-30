@@ -19,7 +19,6 @@
 <table class="table">
     <thead class="thead-dark">
     <tr>
-        <th scope="col">#</th>
         <th scope="col">Fecha Reserva</th>
         <th scope="col">Cantidad Personas</th>
         <th scope="col">Ventana</th>
@@ -30,7 +29,7 @@
     <tbody>
         <% lstReservas.forEach((reserva)=> {%>
         <tr>
-            <td><%=reserva.id%></td>
+            <td hidden="true"><%=reserva.id%></td>
             <td><%=reserva.freserva%></td>
             <td><%=reserva.cantidad%></td>
             <td><%=reserva.ventana%></td>

@@ -11,4 +11,5 @@ export class PlatosController{
         const lstPlatos = await this.platosService.findPlatos();
         res.render('home',{lstPlatos: lstPlatos});
     }
+
 }

@@ -1,6 +1,5 @@
-import {Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, JoinTable, ManyToMany, ManyToOne, OneToMany, PrimaryGeneratedColumn} from "typeorm";
 import {ReservasEntity} from "../Reservas/reservas.entity";
-import {UsuarioEntity} from "../Usuario/usuario.entity";
 
 @Entity('TCOMIDA')
 export class PlatosEntity{
@@ -35,7 +34,8 @@ export class PlatosEntity{
     })
     url: string;
 
-    @ManyToOne(type => ReservasEntity, reserva => reserva.platos)
-    reserva: ReservasEntity;
+    @ManyToMany(type => ReservasEntity, reserva => reserva.platos)
+    @JoinTable()
+    reservas: ReservasEntity[];
 
 }
