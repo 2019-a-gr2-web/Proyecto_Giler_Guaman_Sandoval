@@ -1,4 +1,5 @@
-import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {Column, Entity, OneToMany, PrimaryGeneratedColumn} from "typeorm";
+import {ReservasEntity} from "../Reservas/reservas.entity";
 
 @Entity('Usuario')
 export class UsuarioEntity{
@@ -55,4 +56,6 @@ export class UsuarioEntity{
     })
     tipo: 'Administrador'|'Cliente';
 
+    @OneToMany(type => ReservasEntity, reserva => reserva.usuario)
+    reservas: UsuarioEntity[];
 }

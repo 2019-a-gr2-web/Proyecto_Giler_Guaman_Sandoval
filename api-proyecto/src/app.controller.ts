@@ -14,4 +14,9 @@ export class AppController {
   getHome(@Res() res){
     res.render('home');
   }
+
+  @Get('registerUsuario')
+    getrRegisterUsuario(@Res() res){
+      res.render('registerUser');
+  }
 }

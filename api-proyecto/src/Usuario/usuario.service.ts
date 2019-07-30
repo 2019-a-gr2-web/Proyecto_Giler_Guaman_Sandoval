@@ -6,14 +6,24 @@ import {Repository} from "typeorm";
 @Injectable()
 export class UsuarioService{
     constructor(@InjectRepository(UsuarioEntity)
-                private readonly _usuarioRepository: Repository<UsuarioEntity>,){
+                private readonly usuarioRepository: Repository<UsuarioEntity>,){
 
     }
 
-    validarUserPassLogin(username : string, password : string):Promise<UsuarioEntity[]>{
-        return this._usuarioRepository.find(
-            {select: ['nombre'],
-                where: [{ 'username': username}, {'password': password}]}
-        );
+    createUser(user : UsuarioEntity):Promise<UsuarioEntity>{
+        const objectUser = this.usuarioRepository.create(user);
+        return this.usuarioRepository.save(objectUser);
+    }
+
+    deleteUser(userId: number){
+        this.usuarioRepository.delete(userId);
+    }
+
+    updateUser(user: UsuarioEntity){
+        this.usuarioRepository.update({id: user.id}, {cedula: user.cedula, nombre: user.nombre, telefono: user.telefono, direccion: user.direccion});
+    }
+
+    findUser(username : string, password : string){
+        return this.usuarioRepository.find({where: [{username: username, password: password}]});
     }
 }
