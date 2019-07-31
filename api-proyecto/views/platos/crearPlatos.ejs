@@ -10,9 +10,6 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
 <body>
-<%lstResultado.forEach((resultado)=>{%>
-    <h1><%=resultado.nombrePlato%></h1>
-<%})%>
 <!-- Detallle de almacén -->
 <div class="container-fluid p-3">
     <div class="row">
@@ -21,6 +18,7 @@
             <div class="row">
                 <div class="col alert-info rounded p-2">
                     <h3>Detalle de Reserva</h3>
+                    <a href="/reservas/menuReservas"><button class="btn btn-primary">Atrás</button></a>
                 </div>
             </div>
             <div class="row mt-2">
@@ -35,45 +33,25 @@
                         <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Producto</th>
-                            <th>Cantidad</th>
-                            <th>P/U</th>
-                            <th>Total</th>
+                            <th>Nombre Plato</th>
+                            <th>Precio</th>
+                            <th>Categoría</th>
+                            <th hidden="true">ReservaId</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Disco: Off The Wall</td>
-                            <td>3</td>
-                            <td>70$</td>
-                            <td>210$</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Disco: Off The Wall</td>
-                            <td>3</td>
-                            <td>70$</td>
-                            <td>210$</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Disco: Off The Wall</td>
-                            <td>3</td>
-                            <td>70$</td>
-                            <td>210$</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Disco: Off The Wall</td>
-                            <td>3</td>
-                            <td>70$</td>
-                            <td>210$</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center" colspan="4">Total</td>
-                            <td>840$</td>
-                        </tr>
+                        <%lstPlatosSeleccionados.forEach((plato)=>{%>
+                        <form action="/reservas/crearReservaPlato" method="post">
+                            <tr>
+
+                                <td><input type="text" class="form-control" name="id" value="<%=plato.id%>"></td>
+                                <td><input type="text" class="form-control" name="nombrePlato" value="<%=plato.nombrePlato%>"></td>
+                                <td><input type="text" class="form-control" name="precio" value="<%=plato.precio%>"></td>
+                                <td><input type="text" class="form-control" name="categoria" value="<%=plato.categoria%>"></td>
+                                <td><input type="text" class="form-control" hidden="true" name="reservaId" value="<%=idReserva%>"></td>
+                            </tr>
+                        </form>
+                        <%})%>
                         </tbody>
                     </table>
                 </div>
@@ -86,8 +64,8 @@
 <div class="container-fluid p-3">
     <div class="row">
         <div class="col">
-            <h3>Movimientos de almacén</h3>
-            <p>Las entradas de almacén son registradas según la mercansía ha sido vendida</p>
+            <h3>Platos Disponible</h3>
+            <p>Disfrute de nuestras delicias</p>
         </div>
     </div>
     <div class="row">
@@ -96,70 +74,26 @@
                 <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Tipo movimiento</th>
-                    <th>Fecha movimiento</th>
-                    <th>Usuario</th>
-                    <th>Cliente</th>
-                    <th>Descripción</th>
-                    <th>Detalle</th>
+                    <th>Nombre Plato</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th hidden="true">ReservaId</th>
                 </tr>
                 </thead>
                 <tbody>
+                <%lstPlatos.forEach((plato)=>{%>
+                <form action="/reservas/crearReservaPlato" method="post">
                 <tr>
-                    <td>1</td>
-                    <td>Salida</td>
-                    <td>12 May, 2019</td>
-                    <td>Saul Ulises</td>
-                    <td>Rafael Paniagua</td>
-                    <td>Venta de discos de 50th cent</td>
-                    <td>
-                        <button class="btn btn-sm btn-info">Detalle</button>
-                    </td>
+
+                    <td><input type="text" class="form-control" name="id" value="<%=plato.id%>"></td>
+                    <td><input type="text" class="form-control" name="nombrePlato" value="<%=plato.nombrePlato%>"></td>
+                    <td><input type="text" class="form-control" name="precio" value="<%=plato.precio%>"></td>
+                    <td><input type="text" class="form-control" name="categoria" value="<%=plato.categoria%>"></td>
+                    <td><input type="text" class="form-control" hidden="true" name="reservaId" value="<%=idReserva%>"></td>
+                    <td><button type="submit" class="btn btn-primary">Aceptar</button></td>
                 </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Salida</td>
-                    <td>12 May, 2019</td>
-                    <td>Saul Ulises</td>
-                    <td>Rafael Paniagua</td>
-                    <td>Venta de discos de 50th cent</td>
-                    <td>
-                        <button class="btn btn-sm btn-info">Detalle</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Salida</td>
-                    <td>12 May, 2019</td>
-                    <td>Saul Ulises</td>
-                    <td>Rafael Paniagua</td>
-                    <td>Venta de discos de 50th cent</td>
-                    <td>
-                        <button class="btn btn-sm btn-info">Detalle</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Salida</td>
-                    <td>12 May, 2019</td>
-                    <td>Saul Ulises</td>
-                    <td>Rafael Paniagua</td>
-                    <td>Venta de discos de 50th cent</td>
-                    <td>
-                        <button class="btn btn-sm btn-info">Detalle</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Salida</td>
-                    <td>12 May, 2019</td>
-                    <td>Saul Ulises</td>
-                    <td>Rafael Paniagua</td>
-                    <td>Venta de discos de 50th cent</td>
-                    <td>
-                        <button class="btn btn-sm btn-info">Detalle</button>
-                    </td>
-                </tr>
+                </form>
+                <%})%>
                 </tbody>
             </table>
         </div>

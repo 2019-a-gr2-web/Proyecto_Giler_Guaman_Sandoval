@@ -20,9 +20,9 @@ import {ReservasModule} from "./Reservas/reservas.module";
       password: 'root',
       database: 'proyectoWeb',
       entities: [UsuarioEntity, PlatosEntity, ReservasEntity],
-      synchronize: true,
+      synchronize: false,
       insecureAuth : true,
-      dropSchema: true
+      dropSchema: false
     })],
   controllers: [AppController],
   providers: [AppService],

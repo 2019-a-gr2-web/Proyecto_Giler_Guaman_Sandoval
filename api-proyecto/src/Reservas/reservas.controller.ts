@@ -2,10 +2,12 @@ import {Body, Controller, Get, Param, Post, Res, Session} from "@nestjs/common";
 import {AppService} from "../app.service";
 import {ReservasService} from "./reservas.service";
 import {ReservasEntity} from "./reservas.entity";
+import {PlatosService} from "../Platos/platos.service";
+import {PlatosEntity} from "../Platos/platos.entity";
 
 @Controller('reservas')
 export class ReservasController {
-    constructor(private readonly reservasService: ReservasService) {
+    constructor(private readonly reservasService: ReservasService, private readonly platosService: PlatosService) {
     }
 
     @Get('menuReservas')
@@ -22,8 +24,9 @@ export class ReservasController {
 
     @Get('gestionReservas')
     async getGestionReservas(@Res() res, @Session() session){
+        let userId = Number(session.userId);
         if(session.nombre){
-            const lstReservas = await this.reservasService.conseguirReservas();
+            const lstReservas = await this.reservasService.conseguirReservas(userId);
             res.render('reservas/gestionReservas', {lstReservas : lstReservas});
         }
     }
@@ -31,7 +34,7 @@ export class ReservasController {
     @Get('eliminarReservas/:reservaId')
      async getEliminarReservas(@Res() res, @Param('reservaId') reservaId : number){
         this.reservasService.deleteReserva(reservaId);
-        const lstReservas = await this.reservasService.conseguirReservas();
+        const lstReservas = await this.reservasService.conseguirReservas(null);
         res.render('reservas/gestionReservas', {lstReservas : lstReservas});
     }
 
@@ -40,4 +43,22 @@ export class ReservasController {
         const reservaCreada = await this.reservasService.ingresarReserva(reserva);
         res.redirect('menuReservas');
     }
+
+    @Post('crearReservaPlato')
+    async postCrearReservaPlato(@Body() cuerpo, @Res() res){
+        let platoResultado : PlatosEntity;
+        let reservaResultado : ReservasEntity;
+        const lstPlatos = await this.platosService.findPlatosId(cuerpo.id);
+        lstPlatos.forEach((plato)=>{
+            platoResultado = plato;
+        });
+        const lstReservas = await this.reservasService.findReservaId(cuerpo.reservaId);
+        lstReservas.forEach((reserva)=>{
+            reservaResultado = reserva;
+        });
+        platoResultado.reservas = [reservaResultado];
+        this.platosService.ingresarPlatos(platoResultado);
+        res.redirect('menuReservas');
+    }
+
 }

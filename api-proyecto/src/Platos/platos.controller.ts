@@ -14,8 +14,9 @@ export class PlatosController{
 
     @Get('crearPlatos/:idReserva')
     async getCrearPlatos(@Res() res, @Param('idReserva') idReserva : number){
-        const lstResultado = await this.platosService.findReserva(idReserva);
-        res.render('platos/crearPlatos', {lstResultado: lstResultado});
+        const lstPlatos = await this.platosService.findPlatos();
+        const lstPlatosSeleccionados = await this.platosService.findPlatosReserva(idReserva);
+        res.render('platos/crearPlatos', {lstPlatos: lstPlatos, idReserva: idReserva, lstPlatosSeleccionados:lstPlatosSeleccionados});
     }
 
 }
