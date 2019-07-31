@@ -14,4 +14,8 @@ export class PlatosService{
     findPlatos():Promise<PlatosEntity[]>{
         return this.platoRepository.find();
     }
+
+    findReserva(reservaId : number): Promise<PlatosEntity[]>{
+        return this.platoRepository.find({relations:['reservas'], where: {id: reservaId}});
+    }
 }

@@ -33,7 +33,7 @@
             <td><%=reserva.freserva%></td>
             <td><%=reserva.cantidad%></td>
             <td><%=reserva.ventana%></td>
-            <td><a href=""><button class="btn btn-primary">Gestionar Platos</button></a></td>
+            <td><a href="/platos/crearPlatos/<%=reserva.id%>"><button class="btn btn-primary">Gestionar Platos</button></a></td>
             <td><a href="/reservas/eliminarReservas/<%=reserva.id%>"><button class="btn btn-primary">Eliminar Reserva</button></a></td>
         </tr>
         <%})%>

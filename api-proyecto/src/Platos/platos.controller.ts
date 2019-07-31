@@ -12,4 +12,10 @@ export class PlatosController{
         res.render('home',{lstPlatos: lstPlatos});
     }
 
+    @Get('crearPlatos/:idReserva')
+    async getCrearPlatos(@Res() res, @Param('idReserva') idReserva : number){
+        const lstResultado = await this.platosService.findReserva(idReserva);
+        res.render('platos/crearPlatos', {lstResultado: lstResultado});
+    }
+
 }

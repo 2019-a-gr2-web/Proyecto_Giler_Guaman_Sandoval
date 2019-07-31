@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Gestión de Reservas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
+<%lstResultado.forEach((resultado)=>{%>
+    <h1><%=resultado.nombrePlato%></h1>
+<%})%>
+<!-- Detallle de almacén -->
+<div class="container-fluid p-3">
+    <div class="row">
+        <div class="col-6 offset-3">
+
+            <div class="row">
+                <div class="col alert-info rounded p-2">
+                    <h3>Detalle de Reserva</h3>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+                    <p class="text-right">12, may, 2019</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table class="table table-sm table-hover">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>P/U</th>
+                            <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Disco: Off The Wall</td>
+                            <td>3</td>
+                            <td>70$</td>
+                            <td>210$</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Disco: Off The Wall</td>
+                            <td>3</td>
+                            <td>70$</td>
+                            <td>210$</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Disco: Off The Wall</td>
+                            <td>3</td>
+                            <td>70$</td>
+                            <td>210$</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Disco: Off The Wall</td>
+                            <td>3</td>
+                            <td>70$</td>
+                            <td>210$</td>
+                        </tr>
+                        <tr>
+                            <td class="text-center" colspan="4">Total</td>
+                            <td>840$</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-3">
+    <div class="row">
+        <div class="col">
+            <h3>Movimientos de almacén</h3>
+            <p>Las entradas de almacén son registradas según la mercansía ha sido vendida</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-hover table-sm">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Tipo movimiento</th>
+                    <th>Fecha movimiento</th>
+                    <th>Usuario</th>
+                    <th>Cliente</th>
+                    <th>Descripción</th>
+                    <th>Detalle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Salida</td>
+                    <td>12 May, 2019</td>
+                    <td>Saul Ulises</td>
+                    <td>Rafael Paniagua</td>
+                    <td>Venta de discos de 50th cent</td>
+                    <td>
+                        <button class="btn btn-sm btn-info">Detalle</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Salida</td>
+                    <td>12 May, 2019</td>
+                    <td>Saul Ulises</td>
+                    <td>Rafael Paniagua</td>
+                    <td>Venta de discos de 50th cent</td>
+                    <td>
+                        <button class="btn btn-sm btn-info">Detalle</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Salida</td>
+                    <td>12 May, 2019</td>
+                    <td>Saul Ulises</td>
+                    <td>Rafael Paniagua</td>
+                    <td>Venta de discos de 50th cent</td>
+                    <td>
+                        <button class="btn btn-sm btn-info">Detalle</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Salida</td>
+                    <td>12 May, 2019</td>
+                    <td>Saul Ulises</td>
+                    <td>Rafael Paniagua</td>
+                    <td>Venta de discos de 50th cent</td>
+                    <td>
+                        <button class="btn btn-sm btn-info">Detalle</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Salida</td>
+                    <td>12 May, 2019</td>
+                    <td>Saul Ulises</td>
+                    <td>Rafael Paniagua</td>
+                    <td>Venta de discos de 50th cent</td>
+                    <td>
+                        <button class="btn btn-sm btn-info">Detalle</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>

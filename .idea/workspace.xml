@@ -23,13 +23,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.controller.ts">
+        <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="336">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="21" />
               <folding>
-                <element signature="e#0#80#0" expanded="true" />
+                <element signature="e#0#87#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.entity.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -46,36 +67,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api-proyecto/views/reservas/gestionReservas.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.entity.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-249">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#97#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.entity.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-489">
-              <caret column="108" selection-start-column="108" selection-end-column="108" />
+            <state relative-caret-position="408">
+              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api-proyecto/views/platos/crearPlatos.ejs">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -97,7 +101,6 @@
         <option value="$PROJECT_DIR$/api-proyecto/src/Usuario/usuario.module.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/src/app.controller.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/src/Platos/platos.module.ts" />
-        <option value="$PROJECT_DIR$/api-proyecto/src/Platos/platos.service.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/src/main.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/src/Usuario/usuario.service.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/views/registerUser.ejs" />
@@ -108,18 +111,20 @@
         <option value="$PROJECT_DIR$/api-proyecto/src/Usuario/usuario.controller.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/views/reservas/crearReservas.ejs" />
         <option value="$PROJECT_DIR$/api-proyecto/views/reservas/menuReservas.ejs" />
-        <option value="$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.service.ts" />
-        <option value="$PROJECT_DIR$/api-proyecto/src/Platos/platos.controller.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/views/login.ejs" />
-        <option value="$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.controller.ts" />
-        <option value="$PROJECT_DIR$/api-proyecto/views/reservas/gestionReservas.ejs" />
         <option value="$PROJECT_DIR$/api-proyecto/src/DetalleReserva/detalleReserva.entity.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.entity.ts" />
         <option value="$PROJECT_DIR$/api-proyecto/src/Platos/platos.entity.ts" />
+        <option value="$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.service.ts" />
+        <option value="$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.controller.ts" />
+        <option value="$PROJECT_DIR$/api-proyecto/src/Platos/platos.controller.ts" />
+        <option value="$PROJECT_DIR$/api-proyecto/views/platos/crearPlatos.ejs" />
+        <option value="$PROJECT_DIR$/api-proyecto/views/reservas/gestionReservas.ejs" />
+        <option value="$PROJECT_DIR$/api-proyecto/src/Platos/platos.service.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="725" />
     <option name="width" value="1200" />
     <option name="height" value="1090" />
@@ -191,7 +196,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../guerrero-burbano-jenny-sofia/01-http/Examen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExamenWebIIBimestre" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -257,12 +262,12 @@
       <workItem from="1564461974624" duration="621000" />
       <workItem from="1564489852901" duration="4298000" />
       <workItem from="1564496662838" duration="15355000" />
-      <workItem from="1564521831319" duration="6868000" />
+      <workItem from="1564521831319" duration="9183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53493000" />
+    <option name="totallyTimeSpent" value="55808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -302,16 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -406,27 +401,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-proyecto/views/reservas/menuReservas.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="98" column="105" selection-start-line="98" selection-start-column="105" selection-end-line="98" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-proyecto/views/home.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="124" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="124" />
         </state>
       </provider>
     </entry>
@@ -437,40 +415,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-proyecto/views/platos/crearPlatos.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-proyecto/src/Usuario/usuario.controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-proyecto/views/reservas/gestionReservas.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -484,20 +432,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.entity.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="447">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="10" />
           <folding>
             <element signature="e#0#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Reservas/reservas.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-proyecto/views/home.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="124" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-proyecto/views/platos/crearPlatos.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-proyecto/views/reservas/gestionReservas.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.entity.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489">
-          <caret column="108" selection-start-column="108" selection-end-column="108" />
+        <state relative-caret-position="423">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-proyecto/src/Platos/platos.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="18" column="75" lean-forward="true" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
