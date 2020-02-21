@@ -1,27 +1,24 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import {UsuarioModule} from "./Usuario/usuario.module";
+import {ReportModule} from "./Report/report.module";
 import {TypeOrmModule} from "@nestjs/typeorm";
-import {UsuarioEntity} from "./Usuario/usuario.entity";
-import {PlatosEntity} from "./Platos/platos.entity";
-import {PlatosModule} from "./Platos/platos.module";
-import {ReservasEntity} from "./Reservas/reservas.entity";
-import {ReservasModule} from "./Reservas/reservas.module";
+import {ReportEntity} from "./Report/report.entity";
 
 @Module({
-  imports: [UsuarioModule, PlatosModule, ReservasModule,
+  imports: [ ReportModule,
     TypeOrmModule.forRoot({
-      name: 'default', //Nombre por defecto del TYPEORM
+      name: 'default',
       type: 'mysql',
-      host: 'localhost',
+      host: '167.71.121.6',
       port: 3306,
-      username: 'root',
-      password: 'root',
-      database: 'proyectoWeb',
-      entities: [UsuarioEntity, PlatosEntity, ReservasEntity],
+      username: 'user1',
+      password: 'Mgiler7295+',
+      database: 'BI',
+      entities: [ReportEntity],
       synchronize: false,
-      insecureAuth : true,
+      //logging: false,
+      //insecureAuth : true,
       dropSchema: false
     })],
   controllers: [AppController],
